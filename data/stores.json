@@ -12,7 +12,7 @@
     {
       "name": "기본회",
       "price": "60,000~",
-      "img": "images/moduhoe.webp",
+      "img": "images/basic-hoe.webp",
       "text": "소(2인)부터 특대(5인 이상)까지",
       "tag": "대표"
     },
@@ -267,6 +267,10 @@
     {
       "src": "images/view-dusk.webp",
       "alt": "해 질 무렵 강양항 바다 전경"
+    },
+    {
+      "src": "images/basic-hoe.webp",
+      "alt": "동해횟집 기본회 한 판"
     },
     {
       "src": "images/moduhoe.webp",
