@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<!-- 테스트 중이라 검색 제외. 정식 공개할 때 이 줄과 아래 줄을 지웁니다 -->
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>동해횟집 | 울산 강양항 오션뷰 횟집 · 자연산 회 · 생우럭 매운탕</title>
+<meta name="description" content="울산 울주군 온산읍 강양항 바로 앞, 바다가 보이는 동해횟집. 자연산 회 · 생우럭 매운탕 · 물회 · 해산물. 예약 · 단체 · 놀이방 · 주차. 동해카라반펜션 옆. 010-6554-4242">
+<meta name="keywords" content="동해횟집, 강양 동해횟집, 강양항 횟집, 울산 횟집, 울주 횟집, 진하 횟집, 온산 횟집, 오션뷰 횟집, 생우럭 매운탕, 울산 물회, 명선교 맛집">
+<meta name="theme-color" content="#102C40">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="동해횟집">
+<meta property="og:title" content="동해횟집 — 바다를 보며 먹는 자연산 회">
+<meta property="og:description" content="울산 강양항 바로 앞 오션뷰 횟집. 자연산 회 · 생우럭 매운탕 · 물회. 예약 010-6554-4242">
+<meta property="og:image" content="images/og.jpg">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Noto+Serif+KR:wght@600;800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "동해횟집",
+  "description": "울산 강양항 바로 앞, 바다가 보이는 횟집. 자연산 회, 생우럭 매운탕, 물회.",
+  "servesCuisine": ["생선회", "해산물", "매운탕", "물회"],
+  "telephone": "+82-10-6554-4242",
+  "address": { "@type": "PostalAddress", "streetAddress": "강양길 162", "addressLocality": "울주군 온산읍", "addressRegion": "울산광역시", "addressCountry": "KR" },
+  "geo": { "@type": "GeoCoordinates", "latitude": 35.392492, "longitude": 129.3490929 },
+  "openingHours": "Mo-Su 10:00-22:00",
+  "acceptsReservations": true,
+  "priceRange": "₩20,000~₩200,000"
+}
+</script>
+</head>
+<body class="sea">
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="logo"><img src="images/logo.png" alt="동해횟집" width="647" height="319"></a>
+    <nav class="menu" id="menu">
+      <a href="#story">소개</a>
+      <a href="#menu-sec">메뉴</a>
+      <a href="#stores">오시는 길</a>
+      <a href="tel:010-6554-4242" class="menu-cta">📞 예약 전화</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div class="hero-txt">
+        <img class="hero-logo" src="images/logo.png" alt="동해횟집" width="647" height="319">
+        <p class="hero-badge">울산 강양항 · 바다 앞 횟집</p>
+        <h1><span class="brush">바다를 보며</span><br>먹는 자연산 회</h1>
+        <p class="hero-sub">창밖으로 강양항 바다가 펼쳐지는 자리에서<br>신선한 회 한 상, 생우럭 매운탕까지.</p>
+        <div class="hero-btns">
+          <a href="#menu-sec" class="btn btn-red">메뉴 보기</a>
+          <a href="tel:010-6554-4242" class="btn btn-line">📞 예약 · 포장 전화</a>
+          <button type="button" class="btn btn-dark" data-delivery hidden>🛵 배달 주문</button>
+        </div>
+        <p class="hero-open" id="hero-open"></p>
+      </div>
+      <div class="hero-pic">
+        <img src="images/moduhoe.webp" alt="동해횟집 모둠회 한 상" fetchpriority="high">
+        <span class="hero-tag">대표 메뉴<b>모둠회</b></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="story">
+    <div class="wrap story">
+      <div>
+        <p class="eyebrow">ABOUT</p>
+        <h2 class="title">강양항 바로 앞,<br>바다가 보이는 횟집</h2>
+        <p class="lead" id="story-text"></p>
+      </div>
+      <ul class="points">
+        <li><b>01</b><strong>오션뷰 자리</strong><span>창밖으로 강양항 바다</span></li>
+        <li><b>02</b><strong>자연산 회</strong><span>기본회 · 고급회 · 통마리</span></li>
+        <li><b>03</b><strong>아이 놀이방</strong><span>가족 모임도 편하게</span></li>
+        <li><b>04</b><strong>예약 · 단체 · 주차</strong><span>모임 · 회식 환영</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec sec-paper" id="menu-sec">
+    <div class="wrap">
+      <div class="head-c">
+        <p class="eyebrow">MENU</p>
+        <h2 class="title">대표 메뉴</h2>
+      </div>
+      <div class="sig" id="sig"></div>
+      <div class="board">
+        <div class="board-head">
+          <img class="board-logo" src="images/logo-light.png" alt="동해횟집">
+          <span class="board-title">MENU</span>
+          <span class="board-take">식사 주문 시 돌솥밥 제공</span>
+        </div>
+        <div class="board-tabs" id="board-tabs" role="tablist"></div>
+        <div class="board-body" id="board-body"></div>
+        <p class="board-note" id="menu-note"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="strip" aria-label="매장 사진">
+    <div class="strip-in" id="strip"></div>
+  </section>
+
+  <section class="sec" id="stores">
+    <div class="wrap">
+      <div class="head-c">
+        <p class="eyebrow">LOCATION</p>
+        <h2 class="title">오시는 길 · 영업시간</h2>
+        <p class="lead">강양항 바로 앞, 동해카라반펜션과 같은 자리에 있어요.</p>
+        <button class="btn btn-dark btn-sm" id="near-btn" type="button" hidden>📍 내 위치에서 가까운 지점</button>
+        <p class="near-msg" id="near-msg"></p>
+      </div>
+      <div class="stores one" id="store-list"></div>
+      <div class="map-box">
+        <iframe id="map" title="동해횟집 지도" loading="lazy" allowfullscreen></iframe>
+      </div>
+      <a class="stay" href="https://syyoon2-dhc.github.io/dhcaravan/" target="_blank" rel="noopener">
+        <img src="images/sunrise-1.webp" alt="동해카라반펜션 앞바다 일출" loading="lazy">
+        <span><small>함께 운영하는 숙소</small><b>동해카라반펜션</b>회 먹고 바다 앞에서 하룻밤 — 객실 · 예약 보기 →</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="cheer">
+    <div class="wrap"><p id="cheer"></p></div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img class="foot-logo" src="images/logo-light.png" alt="동해횟집">
+    <div id="foot-stores"></div>
+    <p class="foot-copy">© 동해횟집 · 메뉴 · 가격 · 영업시간은 바뀔 수 있습니다.</p>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="빠른 메뉴">
+  <a href="#menu-sec"><i>🐟</i>메뉴</a>
+  <a href="#stores" id="mbar-stores"><i>📍</i>오시는 길</a>
+  <button type="button" data-delivery hidden><i>🛵</i>배달 주문</button>
+  <button type="button" id="call-open" class="main"><i>📞</i>예약 전화</button>
+</nav>
+
+<div class="sheet" id="sheet" hidden>
+  <div class="sheet-bg" data-close></div>
+  <div class="sheet-box">
+    <h3 id="sheet-title">전화로 예약 · 포장 주문</h3>
+    <div id="sheet-list"></div>
+    <button class="sheet-x" data-close type="button">닫기</button>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
