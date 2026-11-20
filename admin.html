@@ -76,6 +76,7 @@
   <div class="top-in">
     <img src="images/logo-light.png" alt="동해횟집"><b>관리자</b>
     <a href="./" target="_blank">홈페이지 보기</a>
+    <a href="https://syyoon2-dhc.github.io/dhcaravan/admin.html" style="margin-left:6px">🏕 펜션 관리</a>
     <button id="logout" type="button" hidden>로그아웃</button>
   </div>
   <nav class="tabs" id="tabs" hidden>
@@ -91,7 +92,7 @@
   <!-- 로그인: GitHub 토큰 (홈페이지 저장소에 직접 저장하므로) -->
   <section class="card login" id="login" hidden>
     <h2>관리자 로그인</h2>
-    <p class="hint">홈페이지 파일이 있는 GitHub 저장소에 바로 저장합니다. GitHub 토큰을 넣어 주세요.</p>
+    <p class="hint">홈페이지 파일이 있는 GitHub 저장소에 바로 저장합니다. GitHub 토큰을 넣어 주세요.<br><b>동해카라반펜션 관리자(사진 관리)와 같은 토큰</b>을 씁니다. 한쪽에서 로그인하면 다른 쪽도 바로 열려요.</p>
     <label for="token">GitHub 토큰</label>
     <input type="password" id="token" autocomplete="off" placeholder="github_pat_...">
     <label style="font-weight:500"><input type="checkbox" id="remember" checked> 이 기기에서 기억하기 (공용 PC에서는 끄세요)</label>
@@ -99,7 +100,7 @@
     <p class="hint" id="login-err" style="color:#c33;margin-top:10px"></p>
     <ol>
       <li>GitHub → Settings → Developer settings → Fine-grained tokens → Generate new token</li>
-      <li>Repository access: 이 홈페이지 저장소만 선택</li>
+      <li>Repository access: <b>dhcaravan</b>, <b>donghae-hoe</b> 두 저장소 선택</li>
       <li>Permissions → Contents: <b>Read and write</b></li>
       <li>만든 토큰을 위 칸에 붙여 넣기 (토큰은 이 기기에만 저장되고 다른 곳으로 보내지 않습니다)</li>
     </ol>

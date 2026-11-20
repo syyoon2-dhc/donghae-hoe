@@ -14,7 +14,10 @@ const KNOWN_HOSTS = /(^|\.)(baemin\.com|baemin\.me|coupangeats\.com|coupang\.com
 
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-let TOKEN = localStorage.getItem('gj_gh_token') || sessionStorage.getItem('gj_gh_token') || '';
+// 펜션(동해카라반) 관리자 화면과 같은 토큰을 씀 — 같은 주소(syyoon2-dhc.github.io)라 한쪽에서 로그인하면 둘 다 열림
+// (이가국밥은 다른 이름 'gj_gh_token' 으로 따로 저장)
+const TOKEN_KEY = 'dhc_gh_token';
+let TOKEN = localStorage.getItem(TOKEN_KEY) || sessionStorage.getItem(TOKEN_KEY) || '';
 let D = null, SHA = null, dirty = false, tab = 'menu';
 const preview = {};   // 방금 올린 사진: 경로 → 이 기기 미리보기 주소 (홈페이지 반영 전에도 보이게)
 
@@ -303,13 +306,13 @@ async function start() {
 $('login-btn').addEventListener('click', () => {
   TOKEN = $('token').value.trim();
   if (!TOKEN) return;
-  ($('remember').checked ? localStorage : sessionStorage).setItem('gj_gh_token', TOKEN);
+  ($('remember').checked ? localStorage : sessionStorage).setItem(TOKEN_KEY, TOKEN);
   start();
 });
 $('token').addEventListener('keydown', e => { if (e.key === 'Enter') $('login-btn').click(); });
 $('logout').addEventListener('click', () => {
   if (dirty && !confirm('저장하지 않은 변경이 있어요. 로그아웃할까요?')) return;
-  localStorage.removeItem('gj_gh_token'); sessionStorage.removeItem('gj_gh_token');
+  localStorage.removeItem(TOKEN_KEY); sessionStorage.removeItem(TOKEN_KEY);
   dirty = false; location.reload();
 });
 if (TOKEN) start(); else $('login').hidden = false;
